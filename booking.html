@@ -83,7 +83,7 @@
               <input type="text" required pattern="([0-9]{3})" name="SecCode" value="XXX" style="width:50%;" required="true" minlength="3" maxlength="3"/>
               <small class="error">Enter a valid security code.</small>
               <p>Day of Viewing</p>
-              <input type="text" required pattern="month_day_year" name="DayOf" value="MM/DD/YYYY" style="width:50%;" required="true" />
+              <input type="text" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d" name="DayOf" value="MM/DD/YYYY" style="width:50%;" required="true" />
               <small class="error">Enter a valid movie date.</small>
             </div>
             <div class="large-6 small-12 columns" align="center">
