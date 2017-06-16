@@ -80,7 +80,7 @@
               <input type="text" required pattern="[0-9]{13,16}" name="CardNum" value="XXXXXXXXXXXXXXXX" style="width:50%;" required="true" minlength="16" maxlength="16"/>
               <small class="error">Enter a valid card number.</small>
               <p>Security Code/CVC</p>
-              <input type="text" required pattern="cvv" name="SecCode" value="XXX" style="width:50%;" required="true" minlength="3" maxlength="3"/>
+              <input type="text" required pattern="([0-9]{3})" name="SecCode" value="XXX" style="width:50%;" required="true" minlength="3" maxlength="3"/>
               <small class="error">Enter a valid security code.</small>
               <p>Day of Viewing</p>
               <input type="text" required pattern="month_day_year" name="DayOf" value="MM/DD/YYYY" style="width:50%;" required="true" />
