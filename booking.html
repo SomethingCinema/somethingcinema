@@ -91,7 +91,8 @@
               <input type="text" required pattern="[a-zA-Z]+" name="LastName" placeholder="Doe" style="width:50%;" required="true"/>
               <small class="error">Enter a valid last name.</small>
               <p>Expiration Date</p>
-              <input type="text" name="ExpDate" placeholder="MM/YY" style="width:50%;" required="true"/>
+              <input type="text" required pattern="^(1[0-2]|0[1-9]|\d)\/(20\d{2}|19\d{2}|0(?!0)\d|[1-9]\d)$" name="ExpDate" placeholder="MM/YY" style="width:50%;" required="true"/>
+              <small class="error">Enter a valid expiration date.</small>
               <p>Film Title</p>
               <select name="title" style="width:50%;" required="true">
                 <option value="Film1">Film1</option>
