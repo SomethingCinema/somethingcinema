@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="booking.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -39,7 +40,7 @@
               <a href="./booking.html">Booking</a>
             </li>
             <li>
-            	<a href="./screens.html" class="show-for-medium-up">Screens</a>
+              <a href="./screens.html" class="show-for-medium-up">Screens</a>
             </li>
           </ul>
         </section>
@@ -70,36 +71,36 @@
               <div class="large-12 small-12 columns" align="center">
                 <h4>Book Yo Tickets</h4>
                 <hr>
-					<form>
-						<div class="large-6 small-12 columns" align="center">
-							<p>First Name</p>
-							<input type="text" name "FirstName" value="" style="width:50%;" required="true"/>
-							<p>Card Number</p>
-							<input type="text" name "CardNum" value="" style="width:50%;" required="true"/>
-							<p>Security Code/CVC</p>
-							<input type="text" name "SecCode" value="" style="width:50%;" required="true"/>
-							<p>Day of Viewing</p>
-							<input type="text" name "DayOf" value="" style="width:50%;" required="true" />
-						</div>
-						<div class="large-6 small-12 columns" align="center">
-							<p>Last Name</p>
-							<input type="text" name "LastName" value="" style="width:50%;" required="true"/>
-							<p>Expiration Date</p>
-							<input type="text" name "ExpDate" value="" style="width:50%;" required="true"/>
-							<p>Film Title</p>
-							<select name="title" style="width:50%;" required="true">
-							  <option value="Film1">Film1</option>
-							  <option value="Film2">Film2</option>
-							  <option value="Film3">Film3</option>
-							  <option value="Film4">Film4</option>
-							</select>
-							<p>Showing Time</p>
-							<input type="radio" name="time" value="noon"/> 12:00pm</br>
-							<input type="radio" name="time" value="two"/> 2:00pm</br>
-							<input type="radio" name="time" value="six"/> 6:00pm</br>
-						</div>
-							<input type="submit" value="Submit">
-					</form>
+          <form>
+            <div class="large-6 small-12 columns" align="center">
+              <p>First Name</p>
+              <input type="text" name "FirstName" value="John" style="width:50%;" required="true"/>
+              <p>Card Number</p>
+              <<input type="text" name "CardNum" value="XXXXXXXXXXXXXXXX" style="width:50%;" required="true" minlength="16" maxlength="16"/>
+              <p>Security Code/CVC</p>
+              <input type="text" name "SecCode" value="XXX" style="width:50%;" required="true" minlength="3" maxlength="3"/>
+              <p>Day of Viewing</p>
+              <input type="text" name "DayOf" value="DD/MM/YYYY" style="width:50%;" required="true" />
+            </div>
+            <div class="large-6 small-12 columns" align="center">
+              <p>Last Name</p>
+              <input type="text" name "LastName" value="Doe" style="width:50%;" required="true"/>
+              <p>Expiration Date</p>
+              <input type="text" name "ExpDate" value="MM/YY" style="width:50%;" required="true"/>
+              <p>Film Title</p>
+              <select name="title" style="width:50%;" required="true">
+                <option value="Film1">Film1</option>
+                <option value="Film2">Film2</option>
+                <option value="Film3">Film3</option>
+                <option value="Film4">Film4</option>
+              </select>
+              <p>Showing Time</p>
+              <input type="radio" name="time" value="noon"/> 12:00pm</br>
+              <input type="radio" name="time" value="two"/> 2:00pm</br>
+              <input type="radio" name="time" value="six"/> 6:00pm</br>
+            </div>
+              <input type="submit" value="Submit">
+          </form>
               </div>
             </div>
           </div>
